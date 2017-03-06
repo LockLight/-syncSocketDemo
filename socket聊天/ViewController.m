@@ -11,9 +11,7 @@
 #import <netinet/in.h>
 #import <arpa/inet.h>
 
-@interface ViewController (){
-    int _clientId;
-}
+@interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *ipAddr;
 @property (weak, nonatomic) IBOutlet UITextField *portID;
@@ -22,7 +20,9 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    int _clientId;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
